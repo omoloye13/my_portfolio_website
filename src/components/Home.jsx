@@ -1,14 +1,12 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import BackgroundAnimation from './BackgroundAnimation';
 
 const Home = () => {
 	return (
-		<div name='home' className='w-full h-screen bg-[#000000] mb-0'>
+		<div name='home' className='w-full h-screen bg-[#000000] flex flex-row'>
 			{/* Container */}
-			<div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full pt-0'>
-				{/* <p className='font-bold text-[#fca311] mt-0'>
-					Hello and welcome to my portfolio!
-				</p> */}
+			<div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
 				<h1 className='text-[#fca311]'>Hi, my name is</h1>
 				<h2 className='text-2xl font-bold text-[#e5e5e5]'>
 					Fauziyat Folashade Omoloye
@@ -32,6 +30,10 @@ const Home = () => {
 					</button>
 				</div>
 			</div>
+			<div className='w-1/4 h-full pt-20 max-w-[750]:hidden '>
+				<BackgroundAnimation />
+			</div>
+			{/* <div></div> */}
 		</div>
 	);
 };
